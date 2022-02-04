@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bot_main_chat_menu"
+        android:title="Chat"
+        android:icon="@drawable/chat_icon_24"/>
+
+    <item android:id="@+id/bot_main_friend_menu"
+        android:title="Friends"
+        android:icon="@drawable/people_icon_24"/>
+
+    <item android:id="@+id/bot_main_profile_menu"
+        android:title="Profile"
+        android:icon="@drawable/account_icon"/>
+
+    <item android:id="@+id/bot_main_settings_menu"
+        android:title="Profile"
+        android:icon="@drawable/setting_icon"/>
+
+</menu>

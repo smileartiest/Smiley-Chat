@@ -20,5 +20,7 @@ object Constant {
     //
     const val regRef = "SmileyChatReg"
     const val proPicPath = "ProfilePic"
+    const val chatListRef = "ChatList"
+    const val blockListRef = "BlockList"
 
 }

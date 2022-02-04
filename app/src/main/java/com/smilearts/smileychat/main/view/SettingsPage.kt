@@ -7,6 +7,6 @@ import com.smilearts.smileychat.R
 class SettingsPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_settings_page)
+        setContentView(R.layout.fragment_settings_page)
     }
 }

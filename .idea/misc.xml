@@ -13,11 +13,16 @@
         <entry key="..\:/Android/Smiley Chat/app/src/main/res/drawable/power_icon_24.xml" value="0.27447916666666666" />
         <entry key="..\:/Android/Smiley Chat/app/src/main/res/drawable/right_icon.xml" value="0.27447916666666666" />
         <entry key="..\:/Android/Smiley Chat/app/src/main/res/drawable/send_icon.xml" value="0.27447916666666666" />
+        <entry key="..\:/Android/Smiley Chat/app/src/main/res/drawable/setting_icon.xml" value="0.27447916666666666" />
         <entry key="..\:/Android/Smiley Chat/app/src/main/res/layout/activity_main.xml" value="0.25833333333333336" />
         <entry key="..\:/Android/Smiley Chat/app/src/main/res/layout/activity_register_page.xml" value="0.25833333333333336" />
         <entry key="..\:/Android/Smiley Chat/app/src/main/res/layout/activity_settings_page.xml" value="0.25833333333333336" />
         <entry key="..\:/Android/Smiley Chat/app/src/main/res/layout/activty_splase.xml" value="0.25833333333333336" />
         <entry key="..\:/Android/Smiley Chat/app/src/main/res/layout/contact_page.xml" value="0.25833333333333336" />
+        <entry key="..\:/Android/Smiley Chat/app/src/main/res/layout/fragment_chat_page.xml" value="0.25833333333333336" />
+        <entry key="..\:/Android/Smiley Chat/app/src/main/res/layout/fragment_friends_page.xml" value="0.25833333333333336" />
+        <entry key="..\:/Android/Smiley Chat/app/src/main/res/layout/fragment_profile_page.xml" value="0.25833333333333336" />
+        <entry key="..\:/Android/Smiley Chat/app/src/main/res/layout/fragment_settings_page.xml" value="0.25833333333333336" />
         <entry key="..\:/Android/Smiley Chat/app/src/main/res/layout/login_screen.xml" value="0.264" />
         <entry key="..\:/Android/Smiley Chat/app/src/main/res/layout/main_chat_row.xml" value="0.25833333333333336" />
         <entry key="..\:/Android/Smiley Chat/app/src/main/res/layout/main_page.xml" value="0.25833333333333336" />
@@ -25,6 +30,8 @@
         <entry key="..\:/Android/Smiley Chat/app/src/main/res/layout/row_chat_message.xml" value="0.25833333333333336" />
         <entry key="..\:/Android/Smiley Chat/app/src/main/res/layout/row_contact_list.xml" value="0.25833333333333336" />
         <entry key="..\:/Android/Smiley Chat/app/src/main/res/layout/smsotp_page.xml" value="0.25833333333333336" />
+        <entry key="..\:/Android/Smiley Chat/app/src/main/res/menu/bottom_main_menu.xml" value="0.25833333333333336" />
+        <entry key="..\:/Android/Smiley Chat/app/src/main/res/menu/main_page_menu.xml" value="0.25833333333333336" />
       </map>
     </option>
   </component>
