@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/main_menu_settings"
+        android:id="@+id/main_menu_enquiry"
         app:showAsAction="ifRoom"
-        android:title="Settings"
-        android:icon="@drawable/setting_icon"/>
+        android:title="Enquiry"
+        android:icon="@drawable/question_mark_24"/>
 
 </menu>

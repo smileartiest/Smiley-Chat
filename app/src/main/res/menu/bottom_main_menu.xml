@@ -14,7 +14,7 @@
         android:icon="@drawable/account_icon"/>
 
     <item android:id="@+id/bot_main_settings_menu"
-        android:title="Profile"
+        android:title="Settings"
         android:icon="@drawable/setting_icon"/>
 
 </menu>

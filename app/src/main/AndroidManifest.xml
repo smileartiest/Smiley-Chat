@@ -24,9 +24,6 @@
         <activity
             android:name=".main.view.SettingsPage"
             android:exported="false" />
-        <activity
-            android:name=".main.view.LoginScreen"
-            android:exported="false" />
         <activity android:name=".main.view.SmsOTP" />
         <activity android:name=".main.view.SplashMain">
             <intent-filter>

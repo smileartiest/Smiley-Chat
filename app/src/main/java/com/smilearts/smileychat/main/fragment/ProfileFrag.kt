@@ -5,10 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
 import com.smilearts.smileychat.databinding.FragmentProfilePageBinding
 import com.smilearts.smileychat.main.viewmodel.MainViewModel
+import com.smilearts.smileychat.utils.AppUtil
+import com.smilearts.smileychat.utils.CountryName
 
-class ProfileFrag(viewModel: MainViewModel) : Fragment() {
+class ProfileFrag(private val viewModel: MainViewModel) : Fragment() {
 
     private lateinit var binding: FragmentProfilePageBinding
 
@@ -19,6 +22,19 @@ class ProfileFrag(viewModel: MainViewModel) : Fragment() {
     ): View? {
         binding = FragmentProfilePageBinding.inflate(layoutInflater)
         return binding.root
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        viewModel.repositoryUtil.profileRepository.getProfile().observe(viewModel.lifecycleOwner , {
+            if (it != null) {
+                Glide.with(requireContext()).load(it.userProPicUrl).into(binding.profileProPic)
+                binding.profileName.text = it.userName
+                binding.profilePhno.text = "${AppUtil().getCountryCode(it.userCountryCode)} ${it.userID}"
+            }
+        })
+
     }
 
 }

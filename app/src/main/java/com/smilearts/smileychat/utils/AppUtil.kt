@@ -30,4 +30,11 @@ class AppUtil {
         return simpleDateFormat?.format(calendar?.time).toString()
     }
 
+    fun getCountryCode(code: String) : String {
+        return when(code) {
+            "UAE" -> { CountryName.UAE }
+            else -> { CountryName.INDIA }
+        }
+    }
+
 }
