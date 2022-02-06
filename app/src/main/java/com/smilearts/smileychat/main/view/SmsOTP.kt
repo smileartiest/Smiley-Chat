@@ -59,7 +59,7 @@ class SmsOTP : AppCompatActivity() {
                     if (viewModel.phNo.isNotEmpty()) {
                         startActivity(
                             Intent(this, RegisterPage::class.java)
-                            .putExtra(Constant.uPhone , viewModel.phNo))
+                            .putExtra(Constant.userID , viewModel.phNo))
                         finish()
                     }
                     showMessage("OTP matched successful")
@@ -75,6 +75,8 @@ class SmsOTP : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
+
+        TempData(applicationContext).loginComplete("8344864479" , "" , true)
 
         if (TempData(applicationContext).getLoginStatus()) {
             startActivity(Intent(this, MainPage::class.java));finish()

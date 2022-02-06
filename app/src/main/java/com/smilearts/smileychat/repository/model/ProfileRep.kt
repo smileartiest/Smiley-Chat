@@ -138,6 +138,7 @@ class ProfileRep(private val util: RepositoryUtil) {
     private fun registerNew(model: RegisterModel) {
         util.getDataRef(Constant.regRef).child(model.userID).setValue(model)
         util.tempData.loginComplete(model.userID , model.userPin , true)
+        util.tempData.setProfile(model)
         util.errorStatus.postValue("Register Successful")
     }
 

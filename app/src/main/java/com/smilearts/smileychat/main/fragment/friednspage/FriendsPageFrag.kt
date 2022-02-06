@@ -39,7 +39,11 @@ class FriendsPageFrag(
             when (position) {
                 0 -> {
                     val badge = tab.orCreateBadge
-                    badge.number = 1
+                    viewModel.repositoryUtil.requestRepository.newRequestCount.observe(viewModel.lifecycleOwner , {
+                        if (it != null) {
+                            badge.number = it
+                        }
+                    })
                 }
                 1 -> {
                     val badge = tab.orCreateBadge

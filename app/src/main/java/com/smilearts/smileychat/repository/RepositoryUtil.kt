@@ -9,10 +9,7 @@ import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.smilearts.smileychat.repository.config.RoomConfig
-import com.smilearts.smileychat.repository.model.ChatBlockListRep
-import com.smilearts.smileychat.repository.model.ChatMainListRep
-import com.smilearts.smileychat.repository.model.ChatRep
-import com.smilearts.smileychat.repository.model.ProfileRep
+import com.smilearts.smileychat.repository.model.*
 import com.smilearts.smileychat.utils.TempData
 import kotlinx.coroutines.CoroutineScope
 
@@ -28,6 +25,7 @@ class RepositoryUtil(
 
     val profileRepository = ProfileRep(this)
     val chatRepository = ChatRep(this)
+    val requestRepository = RequestRep(this)
     val chatListRepository = ChatMainListRep(this)
     val blockListRepository = ChatBlockListRep(this)
 

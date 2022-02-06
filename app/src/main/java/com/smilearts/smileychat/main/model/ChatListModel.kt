@@ -4,6 +4,7 @@ data class ChatListModel(
     var chatID: String = "",
     var chatName: String = "",
     var chatPersonID: String = "",
+    var chatProfilePic: String = "",
     var chatPassword: String = "",
     var chatEncryptKey: String = "",
     var chatDecryptKey: String = "",

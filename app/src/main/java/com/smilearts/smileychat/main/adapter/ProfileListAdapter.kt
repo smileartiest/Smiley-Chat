@@ -8,13 +8,15 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.smilearts.smileychat.R
+import com.smilearts.smileychat.main.callback.ProfileCallBack
 import com.smilearts.smileychat.main.model.RegisterModel
 import com.smilearts.smileychat.utils.TempData
 import de.hdodenhof.circleimageview.CircleImageView
 
 class ProfileListAdapter(
     private val activity: Activity,
-    private val list: List<RegisterModel>
+    private val list: List<RegisterModel>,
+    private val callBack: ProfileCallBack
 ) : RecyclerView.Adapter<ProfileListAdapter.MyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -28,9 +30,10 @@ class ProfileListAdapter(
         holder.subTitle.text = model.userStatus
         if (TempData(activity.applicationContext).getProfileID() == model.userID) {
             holder.actionTxt.visibility = View.GONE
+            holder.subTitle.text = "It's your account."
         }
         holder.actionTxt.setOnClickListener {
-            //TODO
+            callBack.chooseProfile(model)
         }
     }
 

@@ -30,8 +30,8 @@ class RegisterPage : AppCompatActivity() {
         setContentView(binding.root)
         repository = RepositoryUtil(this , TempData(this) , AppUtil().scope)
         if (intent != null) {
-            if (intent.extras?.getString(Constant.uPhone)!!.isNotEmpty()) {
-                model.userID = intent.extras?.getString(Constant.uPhone)!!
+            if (intent.extras?.getString(Constant.userID)!!.isNotEmpty()) {
+                model.userID = intent.extras?.getString(Constant.userID)!!
             }
         }
     }

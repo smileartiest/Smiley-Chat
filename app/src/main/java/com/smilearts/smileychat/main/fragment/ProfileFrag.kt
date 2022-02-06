@@ -29,6 +29,7 @@ class ProfileFrag(private val viewModel: MainViewModel) : Fragment() {
 
         viewModel.repositoryUtil.profileRepository.getProfile().observe(viewModel.lifecycleOwner , {
             if (it != null) {
+                viewModel.repositoryUtil.tempData.setProfile(it)
                 Glide.with(requireContext()).load(it.userProPicUrl).into(binding.profileProPic)
                 binding.profileName.text = it.userName
                 binding.profilePhno.text = "${AppUtil().getCountryCode(it.userCountryCode)} ${it.userID}"
